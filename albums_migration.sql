@@ -1,5 +1,5 @@
 CREATE TABLE albums (
-                        id INT (11) NOT NULL AUTO_INCREMENT,
+                        id INT UNSIGNED NOT NULL AUTO_INCREMENT,
                         artist_name VARCHAR(100),
                         album_name  VARCHAR(100),
                         release_date INT(4),

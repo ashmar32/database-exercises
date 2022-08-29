@@ -4,9 +4,14 @@
     <data-source source="LOCAL" name="employees@emp.fulgentcorp.com" uuid="56a5756a-c81a-4e52-8d55-0b97c3cafc69">
       <driver-ref>mariadb</driver-ref>
       <synchronize>true</synchronize>
+      <schema-control>MANUAL</schema-control>
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mariadb://emp.fulgentcorp.com:3306/employees</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
+      <driver-properties>
+        <property name="serverTimezone" value="utc" />
+      </driver-properties>
+      <time-zone>UTC</time-zone>
     </data-source>
   </component>
 </project>

@@ -2,6 +2,8 @@
 -- explaining the results:
 
 -- This query was made for the album name from the albums table, where the artist name is Pink Floyd. Returns the name of all albums by Pink Floyd.
+
+USE ashley;
 SELECT album_name FROM albums
 WHERE artist_name = 'pink floyd';
 
@@ -15,7 +17,8 @@ WHERE album_name = 'Nevermind';
 
 -- This query finds the albums that have release date = 1990
 SELECT album_name FROM albums
-WHERE release_date = "1990";
+WHERE release_date between '1990' and '1999';
+
 
 -- Which albums had less than 20 million certified sales; 6 returned with less than 20 mil in sales
 SELECT album_name FROM albums

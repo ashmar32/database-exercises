@@ -3,6 +3,12 @@
 -- First write your queries as separate INSERT statements for each record and test. You should see no output.
 -- Refactor your script to use a single INSERT statement for all the records and test it again. Again, this should not generate any output.
 
+USE ashley;
+
+TRUNCATE albums;
+
+SELECT * from albums;
+
 INSERT INTO albums (artist_name, album_name, release_date, sales, genre)
 VALUES ('Michael Jackson', 'Thriller', '1982', '50.2', 'Pop');
 

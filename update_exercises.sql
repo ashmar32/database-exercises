@@ -3,13 +3,15 @@
 --     Add SELECT statements after each UPDATE so you can see the results of your handiwork.
 
 
-SELECT album_name FROM albums;
+SELECT *
+FROM albums;
 --     UPDATE statement to make all the albums 10 times more popular (sales * 10)
 UPDATE albums
 SET sales = sales * 10;
 
 --     All albums released before 1980
-SELECT album_name FROM albums
+SELECT *
+FROM albums
 WHERE release_date < '1980';
 --     Move all the albums before 1980 back to the 1800s.
 UPDATE albums

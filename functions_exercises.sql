@@ -45,18 +45,3 @@ FROM employees
 WHERE year(hire_date) BETWEEN 1990 AND 1999
 AND month(birth_date) = 12
 AND day(birth_date) = 25
-
-
-
--- 6. Now reverse the sort order for both queries and compare results.
-/*
-SELECT *
-FROM employees
-WHERE first_name IN ('Irena', 'Vidya', 'Maya')
-ORDER BY last_name, first_name DESC;
-
-SELECT *
-FROM employees
-WHERE last_name like '%e%'
-ORDER BY emp_no DESC;
- */
